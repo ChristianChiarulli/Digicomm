@@ -1,0 +1,8 @@
+% v22bis 2400 b/sec 16-QAM Constellation
+inphase = [1 0.707 0 -0.707 -1 -0.707 0 0.707];
+quadr = [0 0.707 1 0.707 0 -0.707 -1 -0.707];
+inphase = [inphase; -inphase];
+inphase = inphase(:);
+quadr = [quadr; -quadr];
+quadr = quadr(:);
+refConst = inphase + 1i*quadr;
